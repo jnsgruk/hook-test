@@ -1,25 +1,10 @@
 # hook-test
 
-## Description
+This is being used to demonstrate a bug.
 
-TODO: Describe your charm in a few paragraphs of Markdown
+Please disregard :)
 
-## Usage
-
-TODO: Provide high-level usage, such as required config or relations
-
-
-## Developing
-
-Create and activate a virtualenv with the development requirements:
-
-    virtualenv -p python3 venv
-    source venv/bin/activate
-    pip install -r requirements-dev.txt
-
-## Testing
-
-The Python operator framework includes a very nice harness for testing
-operator behaviour without full deployment. Just `run_tests`:
-
-    ./run_tests
+```
+charmcraft build
+juju deploy ./hook-test.charm --resource httpbin-image=kennethreitz/httpbin
+```
